@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  input[type='text'], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid rgb(211, 82, 82);
+    border-radius: 4px;
+    resize: vertical;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  
+  label {
+    margin-left: 200px;
+    margin-top: 5px;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: rgb(230, 230, 236);
+  }
+  
+  input[type='submit'] {
+    width: 10%;
+    background-color: black;
+    color: rgb(23, 255, 73);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-left: 50px;
+  }
+  
+  input[type='submit']:hover {
+    background-color: rgb(14, 13, 13);
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type='submit'] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  /* Icon css */
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+ #reset{
+    width: 10%;
+    background-color: black;
+    color: rgb(23, 255, 73);
+    margin-left: 450px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } 
+
+  body {
+    background-color: rgb(112, 111, 111);
+  }
+

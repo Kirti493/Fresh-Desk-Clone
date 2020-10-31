@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="create.css" />
   </head>
 
   <body>
@@ -120,45 +121,48 @@
       <div class="content">
         <main>
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h6 class="mb-2">Unresolved</h6>
-                  <h3>30</h3>
+            <form name="registration" onSubmit="return formValidation();">
+                <!-- Full Name -->
+                <div class="row">
+                  <div class="col-25">
+                    <label for="username">
+                        Full Name
+                    </label>
+                  </div>
+                  <div class="col-75 input-icons">  
+                    <input type="text" id="username" name="username" placeholder="Full Name" class="input-field" required/>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-2 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h6 class="mb-2">Overdue</h6>
-                  <h3>1</h3>
+                <!-- address line 1  -->
+                <div class="row">
+                  <div class="col-25">
+                    
+                    <label for="title">
+                        Title
+                    </label>
+                  </div>
+                  <div class="col-75 input-icons">
+                     <input type="text" id="title" name="title" placeholder="Title" class="input-field" required/>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-2 my-3">
-                <div class="bg-mattBlackLight p-3">
-                  <h6 class="mb-2">Due today</h6>
-                  <h3>4</h3>
+                <!-- address line 2 -->
+                <div class="row">
+                  <div class="col-25">
+                    <label for="desc">Description</label>
+                  </div>
+                  <div class="col-75 input-icons">
+                    <input type="text" id="desc" name="desc" placeholder="Description" class="input-field" required/>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-2 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h6 class="mb-2">Open</h6>
-                  <h3>24</h3>
+               <br>
+                <!-- submit -->
+                <div class="row">
+                  <input type="Reset" name="reset" value="Reset" id="reset" />
+                  <input type="submit" name="submit" value="Create" />
                 </div>
-              </div>
-              <div class="col-md-2 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h6 class="mb-2">On hold</h6>
-                  <h3>5</h3>
-                </div>
-              </div>
-              <div class="col-md-2 my-3">
-                <div class="bg-mattBlackLight px-3 py-3">
-                  <h6 class="mb-2">Unassigned</h6>
-                  <h3>6</h3>
-                </div>
-              </div>
+              </form>
             </div>
-          </div>
+        
         </main>
       </div>
     </div>
@@ -178,5 +182,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1e11d07715.js" crossorigin="anonymous"></script>
+    <script src="validation.js"></script>
   </body>
 </html>
