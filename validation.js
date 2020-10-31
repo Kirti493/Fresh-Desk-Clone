@@ -6,8 +6,8 @@ function formValidation() {
 
     {
       if (allLetterName(userName)) {
-        if (alphanumericAddress(title)) {
-          if (alphanumericAddress(description)) {
+        if (alphanumericTitle(title)) {
+          if (alphanumericDescription(description)) {
            
           }
         }
@@ -31,24 +31,24 @@ function formValidation() {
   }
   
   // Title
-  function allLetterState(title) {
-    var letters = /^[A-Za-z]+$/;
+  function alphanumericTitle(title) {
+    var letters = /^[0-9a-zA-Z]+$/;
     if (title.value.match(letters)) {
       return true;
     } else {
-      alert('Title must have alphabet characters only');
+      alert('Title must have alphanumeric characters only');
       title.focus();
       return false;
     }
   }
   
   // Description
-  function allLetterCity(description) {
-    var letters = /^[A-Za-z]+$/;
+  function alphanumericDescription(description) {
+    var letters = /^[0-9a-zA-Z]+$/;
     if (description.value.match(letters)) {
       return true;
     } else {
-      alert('Description must have alphabet characters only');
+      alert('Description must have alphanumeric characters only');
       description.focus();
       return false;
     }

@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="create.css" />
+    <link rel="stylesheet" href="contact.css">
   </head>
 
   <body>
@@ -122,48 +122,73 @@
         <main>
           <div class="container-fluid">
             <form name="registration" onSubmit="return formValidation();">
-                <!-- Full Name -->
-                <div class="row">
-                  <div class="col-25">
-                    <label for="username">
-                        Full Name
-                    </label>
-                  </div>
-                  <div class="col-75 input-icons">  
-                    <input type="text" id="username" name="username" placeholder="Full Name" class="input-field" required/>
-                  </div>
-                </div>
-                <!-- address line 1  -->
-                <div class="row">
-                  <div class="col-25">
-                    
-                    <label for="title">
-                        Title
-                    </label>
-                  </div>
-                  <div class="col-75 input-icons">
-                     <input type="text" id="title" name="title" placeholder="Title" class="input-field" required/>
-                  </div>
-                </div>
-                <!-- address line 2 -->
-                <div class="row">
-                  <div class="col-25">
-                    <label for="desc">Description</label>
-                  </div>
-                  <div class="col-75 input-icons">
-                    <input type="text" id="desc" name="desc" placeholder="Description" class="input-field" required/>
-                  </div>
-                </div>
-               <br>
-                <!-- submit -->
-                <div class="row">
-                  <input type="Reset" name="reset" value="Reset" id="reset" />
-                  <input type="submit" name="submit" value="Create" />
-                </div>
-              </form>
+            <div class="row">
+                    <div class="col-md-12">
+                      <div class="my-2 p-3">
+                        <div class="row">
+                          <div class="col-md-2">
+                          <img src="user1.PNG" alt="user1" id="user">
+                        </div>
+                        <div class="col-md-6">
+                          <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                          <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                          <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="col-md-2">
+                          <span class="material-icons" id="edit">
+                            edit
+                          <span class="material-icons" id="cancel">
+                            cancel
+                            </span>
+                          </span>
+                        </div>
+                        </div>
+                    <br>
+                        <div class="row">
+                            <div class="col-md-2">
+                            <img src="user1.PNG" alt="user1" id="user">
+                          </div>
+                          <div class="col-md-6">
+                            <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                          </div>
+                          <div class="col-md-2">
+                            <span class="material-icons" id="edit">
+                              edit
+                            <span class="material-icons" id="cancel">
+                              cancel
+                              </span>
+                            </span>
+                          </div>
+                          </div>
+                
+            <br>
+
+            <div class="row">
+                <div class="col-md-2">
+                <img src="user1.PNG" alt="user1" id="user">
+              </div>
+              <div class="col-md-6">
+                <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p id="line">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="col-md-2">
+                <span class="material-icons" id="edit">
+                  edit
+                <span class="material-icons" id="cancel">
+                  cancel
+                  </span>
+                </span>
+              </div>
+              </div>
+
+                      </div>
+                    </div>
             </div>
-
-
+          </form>
+          </div>
         </main>
       </div>
     </div>
@@ -183,7 +208,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/1e11d07715.js" crossorigin="anonymous"></script>
-    <script src="validation.js"></script>
   </body>
 </html>

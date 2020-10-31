@@ -1,0 +1,17 @@
+
+  body {
+    background-color: rgb(112, 111, 111);
+  }
+
+  #user{
+    margin-left: 100px;
+  }
+
+  #edit{
+      margin-left: 450px;
+      cursor: pointer;
+  }
+
+  #cancel{
+      cursor: pointer;
+  }
