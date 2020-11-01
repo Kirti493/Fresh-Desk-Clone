@@ -22,7 +22,7 @@
     color: rgb(230, 230, 236);
   }
   
-  input[type='submit'] {
+  #submit {
     width: 10%;
     background-color: black;
     color: rgb(23, 255, 73);
