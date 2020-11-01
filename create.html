@@ -130,7 +130,7 @@
                     </label>
                   </div>
                   <div class="col-75 input-icons">  
-                    <input type="text" id="username" name="username" placeholder="Full Name" class="input-field" required/>
+                    <input type="text" id="username" name="username" placeholder="Full Name" class="uname" required/>
                   </div>
                 </div>
                 <!-- address line 1  -->
@@ -142,7 +142,7 @@
                     </label>
                   </div>
                   <div class="col-75 input-icons">
-                     <input type="text" id="title" name="title" placeholder="Title" class="input-field" required/>
+                     <input type="text" id="title" name="title" placeholder="Title" class="tit" required/>
                   </div>
                 </div>
                 <!-- address line 2 -->
@@ -151,14 +151,15 @@
                     <label for="desc">Description</label>
                   </div>
                   <div class="col-75 input-icons">
-                    <input type="text" id="desc" name="desc" placeholder="Description" class="input-field" required/>
+                    <input type="text" id="desc" name="desc" placeholder="Description" class="desc" required/>
                   </div>
                 </div>
                <br>
                 <!-- submit -->
                 <div class="row">
                   <input type="Reset" name="reset" value="Reset" id="reset" />
-                  <input type="submit" name="submit" value="Create" />
+                  <!-- <input type="submit" name="submit" value="Create" id="submit"/> -->
+                  <button id="submit">Create</button>
                 </div>
               </form>
             </div>
@@ -184,6 +185,7 @@
     ></script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/1e11d07715.js" crossorigin="anonymous"></script>
-    <script src="validation.js"></script>
+   
+    <script src="create.js"></script>
   </body>
 </html>
